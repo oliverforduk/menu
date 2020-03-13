@@ -1,0 +1,164 @@
+:root {
+	--light-green: #A1DAC9;
+	--mid-green: #88C1B0;
+	--font-col: #b1624eff;
+}
+
+.MenuItem {
+	width: 620px;
+	position: relative;
+	padding: 0.5em;
+}
+
+.MenuItem .Float-R {
+	float: right;
+}
+
+.MenuItem hr {
+	color: var(--light-green);
+	width: 92%;
+	left: 4%;
+	position: absolute;
+}
+
+.MenuItem .Back {
+	border: 2px solid var(--light-green);
+	border-top-right-radius: 15px;
+	background-color: #FFF;
+}
+
+.MenuItem .Back img {
+  width: 100%;
+}
+
+.MenuItem .Img-Small {
+	display: none;
+}
+
+.MenuItem .Item-Content {
+	position: absolute;
+	top: 0.5em;
+	bottom: 0.5em;
+	left: 0.5em;
+	width: 47.5%;
+	background-color: var(--light-green);
+	padding: 0.5em;
+	color: var(--font-col);
+	
+}
+
+.MenuItem .Item-Content h1 {
+	text-align: center;
+	padding: 0.25em;
+	font-size: 1.5em;
+	font-weight: normal; 
+}
+
+.MenuItem .Item-Content p {
+	font-size: 0.95em;
+}
+
+.MenuItem .Item-Content .Price {
+	/*padding: 0em 0.25em;*/
+	font-size: 3em; 
+	text-align: center;
+}
+
+.MenuItem .Nutrition-Box {
+	background-color: #FFF;
+}
+
+.MenuItem .Nutrition-Box div {
+	padding: 0 0.25em;
+}
+
+.MenuItem .Button-Holder {
+	position: absolute;
+	bottom: 0.5em;
+	right: 0.5em;
+	width: 52.5%;
+	text-align: center;
+	padding: 1em;
+}
+
+.MenuItem .Button-Holder button {
+	background-color: var(--light-green);
+	border: none;
+	border-top-right-radius: 7.5px;
+	padding: 0.5em 2.5em;
+	font-size: 1.25em;
+	color: var(--font-col);
+	transition: all 0.2s linear;
+}
+.MenuItem .Button-Holder button:hover {
+	cursor: pointer;
+	background-color: var(--mid-green);
+	text-decoration: underline;
+}
+
+/*Mid size*/
+@media (max-width: 1275px) {
+	/*3 items per row*/
+	.MenuItem {
+		width: 33.333%;
+		padding: 0.25em;
+	}
+	/*hide large photo, show small*/
+	.MenuItem .Back .Img-Large {
+		display: none;
+	}
+	.MenuItem .Back .Img-Small {
+		display: block;
+	}
+
+	.MenuItem .Back {
+		overflow: hidden;
+		background-color: var(--light-green);
+		height: 100%;
+	}
+
+	.MenuItem .Item-Content {
+		position: relative;
+		top: 0;
+		left: 0;
+		width: 100%;
+	}
+
+	.MenuItem .Button-Holder {
+		position: relative;
+		left: 0;
+		bottom: 0;
+		padding: 0.5em;
+		width: 100%;
+	}
+
+	.MenuItem .Button-Holder button {
+		background-color: #FFF;
+		border: 1px solid var(--light-green);
+		border-radius: 5px;
+	}
+	.MenuItem .Button-Holder button:hover {
+		background-color: #FFF;
+		border: 1px solid var(--font-col);
+	}
+	/*hide nutrition info*/
+	.MenuItem .Nutrition-Box {
+		display: none;
+	}
+}
+
+/*small size*/
+@media (max-width: 850px) {
+	/*two items per row*/
+	.MenuItem {
+		width: 50%;
+	}
+}
+
+/*smallest size*/
+@media (max-width: 500px) {
+	/*one item per row*/
+	.MenuItem {
+		width: 100%;
+	}
+}

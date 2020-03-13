@@ -1,0 +1,24 @@
+:root {
+	--lightest-green: #EEFFFF;
+}
+
+.MenuList {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 1em;
+	/*background-color: var(--lightest-green);*/
+}
+
+.Grid {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+@media (max-width: 1275px) {
+	.MenuList {
+		padding: 1em 0.5em;
+	}
+}
