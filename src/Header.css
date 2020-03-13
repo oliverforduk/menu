@@ -1,0 +1,23 @@
+:root {
+	--light-green: #A1DAC9;
+	--mid-green: #88C1B0;
+	--dark-green: #88C1B0;
+	--font-col: #b1624eff;
+}
+
+.Header {
+	background-color: var(--dark-green);
+	padding: 0.5em 2.25em;
+	color: var(--font-col);
+}
+
+.Header .Brand {
+	list-style: none;
+	width: max-content;
+	font-size: 2.25em;
+	font-weight: 600;
+}
+
+.Header .Brand:hover {
+	cursor: pointer;
+}

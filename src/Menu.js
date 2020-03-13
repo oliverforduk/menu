@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
+import Header from './Header';
 import MenuList from './MenuList';
+import ContactForm from './ContactForm';
 import * as apiCalls from './api.js';
 
 class Menu extends Component {
@@ -18,13 +20,18 @@ class Menu extends Component {
 		this.setState({ items: menu.menu.items });
 	}
 
+
 	render() {
 		let {items} = this.state;
 		return (
 			<div className="Menu">
+				<Header />
+
 				<MenuList 
 					items={items} 
 				/>
+
+				<ContactForm />
 			</div>
 		)
 	}
