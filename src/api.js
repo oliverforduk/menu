@@ -1,5 +1,6 @@
 const APIURL = 'https://dev.menu.ninja/api/menu/156?key=8j5vfe%24*pfb**rzt&pretty=1';
 
+//api call to fetch the menu
 export async function getMenu() {
   return fetch(APIURL)
     .then(res => {
@@ -8,6 +9,7 @@ export async function getMenu() {
     });
 }
 
+//general error handling
 function handleError(res) {
   if(!res.ok) {
     if(res.status >=400 && res.status < 500) {

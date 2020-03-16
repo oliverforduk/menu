@@ -4,6 +4,7 @@
 	--font-col: #b1624eff;
 }
 
+/*full size menu item*/
 .MenuItem {
 	width: 620px;
 	position: relative;
@@ -59,7 +60,6 @@
 }
 
 .MenuItem .Item-Content .Price {
-	/*padding: 0em 0.25em;*/
 	font-size: 3em; 
 	text-align: center;
 }

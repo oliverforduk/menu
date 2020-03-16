@@ -3,10 +3,6 @@ import MenuItem from './MenuItem';
 import './MenuList.css';
 
 class MenuList extends Component {
-	// constructor(props) {
-	// 	super(props);
-	// }
-
 	render() {
 		let items = this.props.items.map(i =>
 			<MenuItem

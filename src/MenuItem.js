@@ -8,8 +8,6 @@ class MenuItem extends Component {
 		return (
 			
 			<div className="MenuItem">
-
-
 				<div className="Back">
 					<img className="Img-Large" alt={name} src={imageLarge} />
 					<img className="Img-Small" alt={name} src={imageSmall}/>
@@ -36,7 +34,6 @@ class MenuItem extends Component {
 						<button>See More</button>
 					</div>
 				</div>
-
 			</div>
 		)
 	}

@@ -15,6 +15,7 @@ class Menu extends Component {
 		this.loadMenu();
 	}
 
+	//fetch menu and set items as state
 	async loadMenu() {
 		let menu = await apiCalls.getMenu();
 		this.setState({ items: menu.menu.items });
